@@ -1,0 +1,21 @@
+/************** Global **************/
+body {
+    background-color: #f1f1f1;
+    font-size: 16px;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+/************** Navigation **************/
+.header__nav {
+    float: right;
+    padding-top: 1.5em;
+    padding-right: 18em;
+}
+
+.header__nav_ul {
+    display: flex;
+}
+
+.nav__item a {
+    margin: 0 24px;
+}
