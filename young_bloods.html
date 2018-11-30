@@ -3,6 +3,9 @@
   <head>
     <!-- basic.html -->
     <meta charset = "UTF-8" />
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC" rel="stylesheet">
+    <link href="styles/reset_styles.css" rel="stylesheet" type="text/css">
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
     <title>Young Bloods</title>
   </head>
   <body>
@@ -12,12 +15,12 @@
         <img src="" alt="">
       </div>
       <div class="menu">
-        <nav>
-          <ul>
-            <li class="menu-item">Home</li>
-            <li class="menu-item">About Us</li>
-            <li class="menu-item">Portfolio</li>
-            <li class="menu-item">Contact Us</li>
+        <nav class="nav header__nav">
+          <ul class="header__nav_ul">
+            <li class="nav__item"><a href="#">Home</a></li>
+            <li class="nav__item"><a href="#">About Us</a></li>
+            <li class="nav__item"><a href="#">Portfolio</a></li>
+            <li class="nav__item"><a href="#">Contact Us</a></li>
           </ul>
         </nav> 
       </div>
@@ -136,15 +139,17 @@
         <div>
           <img src="" alt="">
           <p>© 2018 | Youngbloods, Ltd.</p>
-          <nav class="footer-menu menu">
-            <ul>
-              <li class="menu-item">About Us</li>
-              <li class="menu-item">Portfolio</li>
-              <li class="menu-item">Contact Us</li>
-              <li class="menu-item">Terms</li>
-              <li class="menu-item">Privacy</li>
-            </ul>
-          </nav>
+          <div class="menu">
+            <nav class="nav footer__nav">
+              <ul class="footer__nav_ul">
+                <li class="nav__item"><a href="#">About Us</a></li>
+                <li class="nav__item"><a href="#">Portfolio</a></li>
+                <li class="nav__item"><a href="#">Contact Us</a></li>
+                <li class="nav__item"><a href="#">Terms</a></li>
+                <li class="nav__item"><a href="#">Privacy</a></li>
+              </ul>
+            </nav>
+          </div>
           <span><i class="social-media icons"></i></span>
           <span><i class="social-media icons"></i></span>
           <span><i class="social-media icons"></i></span>
