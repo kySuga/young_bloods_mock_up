@@ -1,21 +1,205 @@
-/************** Global **************/
+/* NOTES ***************************/
+/*  Best viewed at 1340px X auto (1015px) as of 11-30-18 
+ *
+ *
+ *
+ *
+ * font-family: 'Cabin', sans-serif;
+ * font-family: 'Raleway', sans-serif;
+ * font-family: 'Catamaran', sans-serif;
+ * font-family: 'Cantarell', sans-serif;
+ * font-family: 'Gudea', sans-serif;
+ * font-family: 'Biryani', sans-serif;
+ */
+
+/* Global ****************************/
 body {
-    background-color: #f1f1f1;
+    background-color: #fff;
     font-size: 16px;
-    font-family: 'Noto Sans TC', sans-serif;
+    font-family: 'Catamaran', sans-serif;
+    letter-spacing: 3px;
+    box-sizing: border-box;
 }
 
-/************** Navigation **************/
-.header__nav {
+h1 {
+    font-size: 3em;
+    line-height: 1.33em;
+    font-weight: 200;
+}
+
+/* Logo ***************************/
+.logo img {
+    padding: 1.1em 0 1.2em;
+}
+
+/* Navigation ***************************/
+/* .menu {
+    position: absolute;
     float: right;
     padding-top: 1.5em;
     padding-right: 18em;
+} */
+
+.container {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.header {
+    position: absolute;
+    z-index: 100;
+    display: flex;
+    /* padding-top: 1.5em; */
+    align-items: center;
+    /* margin-left: 10em; */
+    height: 135px;
+    width: inherit;
+    /* border: 1px solid;   For testing purposes ONLY */
 }
 
 .header__nav_ul {
     display: flex;
 }
 
+.menu {
+    margin-left: auto;
+}
+
 .nav__item a {
     margin: 0 24px;
+    color: rgba(255, 255, 255, 0.4);
+    text-decoration: none;
+    padding: 1.5em 0.3em 1.2em 0.3em;
+}
+
+.nav__item a:hover,
+.nav__item a:active,
+.nav__item a:visited {
+    color: rgb(255, 255, 255);
+}
+
+/* <!-- set class home for example, active state --> */
+.home a {
+    color: #fff;
+}
+
+/* Hero ***************************/
+.hero {
+    position: relative;
+    padding: 14em 0;
+    background-color: #FD6262;
+    display: flex;
+    z-index: 0;
+    /* border-bottom-left-radius: 50% 20%; */
+    /* border-bottom-right-radius: 50% 20%; */
+}
+
+.hero h1 {
+    letter-spacing: 3px;
+    font-size: 3.5em;
+}
+
+.hero h1, .hero p {
+    color: #fff;
+}
+
+/* .hero-text {
+    width: 37%;
+    z-index: 20;
+    padding-left: 9em;
+} */
+
+.left-col {
+    width: 50%;
+    padding-right: 1em;
+    margin-left: 7.5em;
+}
+
+.hero-text p {
+    margin-top: 2.33em;
+    line-height: 2em;
+    width: 77%;
+}
+
+.hero-img {
+    z-index: 4;
+    position: absolute;
+    left: 57%;
+    bottom: 11%;
+}
+
+.title__bottom {
+    font-weight: bold;
+}
+
+.hero__ctas {
+    margin-top: 3em;
+    display: flex;
+    align-items: center;
+    font-size: 0.8em;
+}
+
+.hero__left_cta {
+    display: inline-block;
+    padding: 1.8em 2em;
+    text-align: center;
+    border-radius: 40px;
+    width: 30%;
+    text-decoration: none;
+    color: #333;
+    background-color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 700
+}
+
+p.hero__or_cta {
+    width: auto;
+    margin: 0 2.5em;
+}
+
+.hero__right_cta {
+    color: #fff;
+}
+
+/* Circles Background ***************************/
+.circles__background {
+    z-index: -1;
+}
+
+.circle {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.circle.one {
+    background-color: #F8C620;
+    z-index: 3;
+    right: 24%;
+    bottom: 43%;
+}
+
+.circle.two {
+    background-color: #F77E37;
+    width: 500px;
+    height: 500px;
+    z-index: 2;
+    right: 15%;
+    bottom: 27%;
+}
+
+.circle.three {
+    background-color: #F35D5F;
+    width: 850px;
+    height: 850px;
+    z-index: 1;
+    right: 2%;
+    bottom: 7%;
+}
+
+/* Section One ***************************/
+.sect-one {
+    padding: 14em 0;
 }

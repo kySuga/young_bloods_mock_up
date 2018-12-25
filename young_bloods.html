@@ -3,77 +3,90 @@
   <head>
     <!-- basic.html -->
     <meta charset = "UTF-8" />
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Biryani:200,400,700|Cabin:400,700|Cantarell:400,700|Catamaran:100,200,400,700|Gudea:400,700|Raleway:100,200,400" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet"> -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC" rel="stylesheet"> -->
     <link href="styles/reset_styles.css" rel="stylesheet" type="text/css">
     <link href="styles/style.css" rel="stylesheet" type="text/css">
     <title>Young Bloods</title>
   </head>
   <body>
     <!-- Start header -->
-    <div class="header">
-      <div class="logo">
-        <img src="" alt="">
-      </div>
-      <div class="menu">
-        <nav class="nav header__nav">
-          <ul class="header__nav_ul">
-            <li class="nav__item"><a href="#">Home</a></li>
-            <li class="nav__item"><a href="#">About Us</a></li>
-            <li class="nav__item"><a href="#">Portfolio</a></li>
-            <li class="nav__item"><a href="#">Contact Us</a></li>
-          </ul>
-        </nav> 
+    <div class="container">
+      <div class="header">
+          <a href="#" class="logo">
+            <img src="assets/imgs/youngbloods_logo_sm.png" alt="YOUNGBLOODS Logo">
+          </a>
+          <div class="menu">
+            <nav class="nav header__nav">
+              <ul class="header__nav_ul">
+                <li class="nav__item home"><a href="#">Home</a></li> <!-- set class home for example, active state -->
+                <li class="nav__item"><a href="#">About Us</a></li>
+                <li class="nav__item"><a href="#">Portfolio</a></li>
+                <li class="nav__item"><a href="#">Contact Us</a></li>
+              </ul>
+            </nav> 
+          </div>
       </div>
     </div>
     <!-- End header -->
 
     <!-- Start hero -->
     <div class="hero">
-      <div class="hero-text left">
-        <h1>Quality code <span>for your ideas</span></h1>
-        <p>Close. It's gonna make your kidneys shut down. That just sounds like slavery with extra steps. Save it for the Semantics Dome, E.B.White. I don't like it here Morty.</p>
-        <a href="#">Drop Us a Line</a>
-        <p>or</p>
-        <a href="#">see why we're worth it</a>
+      <div class="container">
+          <div class="hero-text left-col">
+            <h1>Quality code <br><span class="title__bottom">for your ideas</span></h1>
+            <p>Close. It's gonna make your kidneys shut down. That just sounds like slavery with extra steps. Save it for the Semantics Dome, E.B.White. I don't like it here Morty.</p>
+            <div class="hero__ctas ctas">
+                <a href="#" class="hero__left_cta">Drop Us a Line</a>
+                <p class="hero__or_cta">or</p>
+                <a href="#" class="hero__right_cta">see why we're worth it</a>
+            </div>
+          </div>
       </div>
       <div class="hero-img img">
-
+        <img src="assets/imgs/phone_hand_rsc.png" alt="Hand holding cell phone">
+      </div>
+      <div class="circles__background">
+        <div class="circle one"></div>
+        <div class="circle two"></div>
+        <div class="circle three"></div>
       </div>
     </div>
     <!-- End hero -->
 
     <!-- Start section one - "A few reasons why..." -->
     <div class="sect sect-one">
-      <div class="container">
+      <div class="sect-one-header container">
         <h2>A few reasons why we might be the right fit:</h2>
-        <ul>
-          <li class="list-item">
+      </div>
+        <div class="reasons container">
+          <div class="list-item">
             <i class="icon"></i>
             <h3>Latest Technology</h3>
             <p>Following the hottest trends, we've got the best frameworks on board.</p>
-          </li>
-          <li class="list-item">
+          </div>
+          <div class="list-item">
             <i class="icon"></i>
             <h3>Infinite Passion</h3>
             <p>We love our jobs, therefore we treat every project like it was our last.</p>
-          </li>
-          <li class="list-item">
+          </div>
+          <div class="list-item">
             <i class="icon"></i>
             <h3>Rich Experience</h3>
             <p>As the startup veterans, we've seen it all and helped tons of companies grow.</p>
-          </li>
-          <li class="list-item">
+          </div>
+          <div class="list-item">
             <i class="icon"></i>
             <h3>Mutual Partnership</h3>
             <p>Always happy to share any kind of business or real life advice.</p>
-          </li>
-          <li class="list-item">
+          </div>
+          <div class="list-item">
             <i class="icon"></i>
             <h3>Attention to Schedule</h3>
             <p>Deadline is our religion. Let's ship your MVP before that damn competition!</p>
-          </li>
-        </ul>
-      </div>
+          </div>
+        </div>
     </div>
     <!-- End section one -->
 
