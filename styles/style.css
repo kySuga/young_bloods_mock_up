@@ -1,5 +1,5 @@
-/* NOTES ***************************/
-/*  Best viewed at 1340px X auto (1015px) as of 11-30-18 
+/* NOTES ****************************************************************************************************
+ *  Best viewed at 1340px X auto (1015px) as of 11-30-18 
  *
  *
  *
@@ -10,15 +10,35 @@
  * font-family: 'Cantarell', sans-serif;
  * font-family: 'Gudea', sans-serif;
  * font-family: 'Biryani', sans-serif;
- */
+ *************************** END NOTES */
 
-/* Global ****************************/
+
+
+ /* GLOBAL ****************************************************************************************************/
+
+ /*  Borders are to see what all my boxes are doing */
+/* * {
+    border: 1px solid blue !important; 
+}
+
+div {
+    border: 1px solid red !important;
+} */
+
+/* Reference for box-sizing: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
 body {
     background-color: #fff;
     font-size: 16px;
     font-family: 'Catamaran', sans-serif;
     letter-spacing: 3px;
-    box-sizing: border-box;
 }
 
 h1 {
@@ -27,12 +47,28 @@ h1 {
     font-weight: 200;
 }
 
-/* Logo ***************************/
+h2 {
+    font-size: 2em;
+    line-height: 1.4em;
+}
+
+h3 {
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+p {
+    font-size: 0.9em;
+}
+
+/* LOGO ****************************************************************************************************/
+
 .logo img {
     padding: 1.1em 0 1.2em;
 }
 
-/* Navigation ***************************/
+/* NAVIGATION ****************************************************************************************************/
+
 /* .menu {
     position: absolute;
     float: right;
@@ -83,7 +119,14 @@ h1 {
     color: #fff;
 }
 
-/* Hero ***************************/
+/* BUTTONS ****************************************************************************************************/
+
+.btn {
+
+}
+
+/* HERO ****************************************************************************************************/
+
 .hero {
     position: relative;
     padding: 14em 0;
@@ -112,13 +155,13 @@ h1 {
 .left-col {
     width: 50%;
     padding-right: 1em;
-    margin-left: 7.5em;
+    margin-left: 3.5em;
 }
 
 .hero-text p {
     margin-top: 2.33em;
     line-height: 2em;
-    width: 77%;
+    width: 94%;
 }
 
 .hero-img {
@@ -139,12 +182,12 @@ h1 {
     font-size: 0.8em;
 }
 
-.hero__left_cta {
+.hero__left_cta { /* button */
     display: inline-block;
     padding: 1.8em 2em;
     text-align: center;
     border-radius: 40px;
-    width: 30%;
+    width: 36%;
     text-decoration: none;
     color: #333;
     background-color: #fff;
@@ -162,7 +205,8 @@ p.hero__or_cta {
     color: #fff;
 }
 
-/* Circles Background ***************************/
+/* HERO > CIRCLES BACKGROUND ****************************************************************************************************/
+
 .circles__background {
     z-index: -1;
 }
@@ -199,7 +243,246 @@ p.hero__or_cta {
     bottom: 7%;
 }
 
-/* Section One ***************************/
-.sect-one {
-    padding: 14em 0;
+/* SECTION – ALL ****************************************************************************************************/
+
+.sect {
+    display: flex;
 }
+
+/* SECTION ONE ****************************************************************************************************/
+
+.sect-one {
+    padding: 8em 0;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.reasons-header h2 {
+    line-height: 1.5em;
+    padding-right: 10px;
+}
+
+.reasons-header, .reason {
+    width: 25%;
+    margin: 3em 0.05em;
+}
+
+.reason h3 {
+    padding-block-start: 0.5em;
+    padding-block-end: 1em;
+}
+
+/* SECTION TWO ****************************************************************************************************/
+
+.sect-two {
+    margin-right: 4.75em;
+    margin-bottom: 8em;
+}
+
+.sect-two-img {
+    width: 55%;
+}
+
+.sect-two-img img {
+    width: 100%;
+}
+
+.sect-two-content.right-col {
+    width: 50%;
+    margin: 2.8em 0 0 5em;
+}
+
+.sect-two-content.right-col p {
+    margin-top: 3em;
+    line-height: 1.5em;
+}
+
+.sect-two-btns {
+    display: flex;
+    align-items: center;
+    align-content: space-around;
+    margin-top: 3em;
+}
+
+.sect-two-btns .btn-one {
+    margin-right: 4em;
+    padding: 1.8em 1.3em;
+    border: 1px solid transparent;
+    background-color: #F35D5F;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 40px;
+    font-size: 0.7em;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    width: 12em;
+
+}
+
+.sect-two-btns .btn-two {
+    padding: 1.8em 1.3em;
+    border: 1px solid #F35D5F;
+    color: #F35D5F;
+    text-decoration: none;
+    border-radius: 40px;
+    font-size: 0.7em;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    width: 32em;
+}
+
+/* SECTION THREE ****************************************************************************************************/
+
+.sect-three.container {
+    flex-direction: column;
+    margin-bottom: 8em;
+}
+
+.sect-three h2,
+.sect-three blockquote {
+    text-align: center;
+}
+
+.sect-three h2 {
+    margin-bottom: 1em;
+}
+
+.sect-three blockquote {
+    padding: 0 16em;
+    margin-top: 0.5em;
+    line-height: 1.5;
+    font-style: italic;
+}
+
+/* SECTION FOUR ****************************************************************************************************/
+
+.sect-four {
+    margin-right: 4.75em;
+    margin-bottom: 8em;
+}
+
+.sect-four-img {
+    width: 55%;
+}
+
+.sect-four-img img {
+    width: 100%;
+}
+
+.sect-four-content.right-col {
+    width: 50%;
+    margin: 2.8em 0 0 5em;
+}
+
+.sect-four-content.right-col p {
+    margin-top: 3em;
+    line-height: 1.5em;
+}
+
+.sect-four-btns {
+    display: flex;
+    align-items: center;
+    align-content: space-around;
+    margin-top: 3em;
+}
+
+.sect-four-btns .btn-one {
+    padding: 1.8em 1.3em;
+    background-color: #F35D5F;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 40px;
+    font-size: 0.7em;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    width: 18em;
+}
+
+/* SECTION FIVE ****************************************************************************************************/
+
+.sect-five.container {
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 8em;
+}
+
+.sect-five .btn-one {
+    padding: 1.8em 1.3em;
+    background-color: #F35D5F;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 40px;
+    font-size: 0.7em;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    width: 18em;
+}
+
+.sect-five .btn-two {
+    padding: 1.8em 1.3em;
+    border: 1px solid #F35D5F;
+    color: #F35D5F;
+    text-decoration: none;
+    border-radius: 40px;
+    font-size: 0.7em;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    width: 32em;
+}
+
+/* FOOTER ****************************************************************************************************/
+
+.footer {
+    background-color: #F35D5F;
+}
+
+.footer-contents.container {
+    display: flex;
+    align-items: center;
+}
+
+.footer-contents img {
+    margin-right: 2em;
+}
+
+.footer__nav_ul {
+    display: flex;
+}
+
+p.copyright {
+    font-size: 0.52em;
+    color: #fff;
+}
+
+.nav__item a {
+    font-size: 0.75em;
+}
+
+
+
+
+
+
+
+
+
+/* <SECTION> ****************************************************************************************************/
+/* NOTES ***************************
+/* GLOBAL ****************************/
+/* LOGO ***************************/
+/* NAVIGATION ***************************/
+/* HERO ***************************/
+/* HERO > CIRCLES BACKGROUND ***************************/
+/* SECTION – ALL ***************************/
+/* SECTION ONE ***************************/
+/* SECTION TWO ***************************/
